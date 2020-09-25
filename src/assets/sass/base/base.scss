@@ -166,7 +166,6 @@ input.input {
     justify-content: center;
     flex-direction: column;
     margin: 0 20px;
-
 }
 
 .avatar-name {
@@ -183,4 +182,13 @@ input.input {
     border-right: 40px solid transparent;
     border-top: 124px solid $color-energy-2;
     border-radius: 30px;
+}
+
+
+.avatar-wrapper-standings {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0 20px;
 }
