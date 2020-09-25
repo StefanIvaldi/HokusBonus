@@ -147,6 +147,7 @@ input.input {
 
 .avatar {
     max-width: 84px;
+    margin: 20px;
 
     img {
         height: 84px;
@@ -154,6 +155,10 @@ input.input {
         border-radius: 100%;
         background: $color-white;
     }
+}
+
+.avatars {
+    display: flex;
 }
 
 .arrow-down {
