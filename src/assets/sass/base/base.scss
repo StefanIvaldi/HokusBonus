@@ -32,7 +32,6 @@ body {
     overflow-x: hidden;
     position: relative;
     width: 100%;
-    background: $color-cosmos;
 }
 
 /*------------------*
@@ -145,6 +144,10 @@ input.input {
 //    right: 2px;
 //}
 
+.avatars {
+    display: flex;
+}
+
 .avatar {
     max-width: 84px;
     margin: 20px;
@@ -157,8 +160,20 @@ input.input {
     }
 }
 
-.avatars {
+.avatar-wrapper {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+
+}
+
+.avatar-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: $color-energy;
+
 }
 
 .arrow-down {

@@ -27,7 +27,7 @@
     height: 100%;
 }
 
-.profile {
+.profile, .questions {
     display: flex;
     flex-direction: column;
 
@@ -103,6 +103,47 @@
                     transform: rotate(45deg);
                 }
             }
+        }
+    }
+
+    .question {
+        font-size: 64px;
+        margin-bottom: 134px;
+    }
+
+    .answers {
+        .answer {
+            width: 100%;
+            min-height: 212px;
+            background: $color-white;
+            border-radius: 12px;
+            border-bottom: $color-steel solid 17px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-weight: bold;
+
+            &:hover {
+                border-bottom: $color-steel solid 8px;
+            }
+
+            .option {
+                color: $color-dark;
+                background: $color-steel;
+                font-size: 48px;
+                margin-left: 50px;
+                width: 81px;
+                height: 81px;
+                border-radius: 16px;
+
+            }
+
+            .text {
+                color: $color-dark;
+                font-size: 48px;
+                margin-left: 45px;
+            }
+
         }
     }
 }
