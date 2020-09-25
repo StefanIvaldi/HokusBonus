@@ -78,6 +78,10 @@
             justify-content: center;
             position: relative;
 
+            p {
+                z-index: 2;
+            }
+
             &.yellow {
                 background: $color-energy-2;
                 border-radius: 22px;
