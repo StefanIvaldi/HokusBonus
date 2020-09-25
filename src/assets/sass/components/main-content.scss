@@ -56,4 +56,46 @@
             margin-top: 60px;
         }
     }
+
+    &.counter {
+
+        .count-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .count {
+            font-size: 288px;
+            font-weight: bold;
+            color: $color-white;
+            margin-top: 200px;
+            background: $color-balance;
+            border-radius: 100%;
+            width: 354px;
+            height: 354px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            &.yellow {
+                background: $color-energy-2;
+                border-radius: 22px;
+            }
+
+            &.red {
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    width: 354px;
+                    height: 354px;
+                    background: $color-danger;
+                    border-radius: 22px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
 }
+
