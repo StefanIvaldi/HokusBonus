@@ -134,55 +134,26 @@ input.input {
     }
 }
 
-.inputfile2 {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
-}
-
-.inputfile2 + label {
-    font-size: 1.25em;
-    font-weight: 700;
-    color: black;
-    background-color: $color-white;
-    display: inline-block;
-    height: 84px;
-    width: 84px;
-    border-radius: 100%;
-    cursor: pointer;
-    position: relative;
-
-
-    .circle {
-        font-size: 1.25em;
-        height: 80px;
-        width: 80px;
-        border: 1px dashed #3DAE77;
-        border-radius: 100%;
-        position: absolute;
-        bottom: 2px;
-        right: 2px;
-    }
-
-    &:after {
-        content: '';
-        background-image: url('src/assets/img/camera.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        top: 50%;
-        transform: translateX(-50%);
-        left: 50%;
-    }
-}
+//.circle {
+//    font-size: 1.25em;
+//    height: 80px;
+//    width: 80px;
+//    border: 1px dashed #3DAE77;
+//    border-radius: 100%;
+//    position: absolute;
+//    bottom: 2px;
+//    right: 2px;
+//}
 
 .avatar {
     max-width: 84px;
+
+    img {
+        height: 84px;
+        width: 84px;
+        border-radius: 100%;
+        background: $color-white;
+    }
 }
 
 .arrow-down {
