@@ -1,0 +1,59 @@
+/*------------------*
+# Main Content
+*------------------*/
+
+.main-content {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+    &.profile-page {
+        background: $color-cosmos;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .upper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+
+        h1 {
+            margin-bottom: 100px;
+        }
+
+    }
+
+    .lower {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        span {
+            margin-top: 60px;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+/*------------------*
+# Base
+*------------------*/
+
+
+html {
+    box-sizing: border-box;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: 1.5;
+    overflow-y: scroll;
+    min-height: 100%;
+    word-wrap: break-word;
+    background: gray;
+}
+
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    align-items: stretch;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    background: $color-cosmos;
+}
+
+/*------------------*
+# Buttons
+*------------------*/
+
+.button {
+    font-size: $h5-size;
+    font-weight: bold;
+    color: $color-white;
+    padding: 30px 120px;
+    border-radius: 10px;
+    outline: none;
+    border-color: transparent;
+
+    &:hover {
+        color: $color-white;
+        border-color: transparent;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: transparent;
+        color: $color-white;
+    }
+}
+
+.is-volcano {
+    background: $color-volcano;
+}
+
+.is-outline {
+    color: $color-white;
+    background: none;
+    border-color: $color-white; 
+
+    &:hover {
+        border-color: $color-white;
+    }
+}
+
+/*------------------*
+# Inputs
+*------------------*/
+
+input.input {
+    font-size: $h2-size;
+    color: $color-dark;
+    text-align: center;
+    padding: 18px 0;
+    border-radius: 12px;
+    border: solid 1px $color-white;
+    font-weight: normal;
+    max-width: 569px;
+
+    &::placeholder {
+        color: $color-cloud;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $color-calm;
+    }
+}
